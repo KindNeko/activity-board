@@ -1,80 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  Report for
-  Jeremy Robson
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Daily
-  Weekly
-  Monthly
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="board">
+      <div class="board__wrapper">
+        <div class="board__person">
+          <div class="info-card">
+            <img
+              class="info-card__photo"
+              src="images/image-jeremy.png"
+              alt=""
+            />
+            <div class="info-card__text">
+              <p class="info-card__subtitle">Report for</p>
+              <h2 class="info-card__title">Jeremy Robson</h2>
+            </div>
+          </div>
+          <div class="view-selector">
+            <div class="view-selector__item">Daily</div>
+            <div class="view-selector__item view-selector__item--active">
+              Weekly
+            </div>
+            <div class="view-selector__item">Monthly</div>
+          </div>
+        </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="board__item board--work">
+          <article class="tracking-card">
+            <div class="tracking-card__header">
+              <h3 class="tracking-card__title">Work</h3>
+              <img
+                class="tracking-card__menu"
+                src="images/icon-ellipsis.svg"
+                alt="menu"
+              />
+            </div>
+            <div class="tracking-card__main">
+              <div class="tracking-card__time">5hrs</div>
+              <div class="tracking-card__prev-period">Previous - 7hrs</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
 </html>
